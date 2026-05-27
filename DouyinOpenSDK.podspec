@@ -13,13 +13,4 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = "DouyinOpenSDK.xcframework"
   s.resource = "DouyinOpenSDK.xcframework/ios-arm64/DouyinOpenSDK.framework/Resources/DYOpenCore.bundle"
   s.frameworks = "UIKit", "Foundation", "CoreGraphics", "WebKit", "Security", "Photos", "SystemConfiguration", "Network", "CoreData", "QuartzCore"
-
-  s.pod_target_xcconfig = {
-    "OTHER_LDFLAGS" => "-ObjC -all_load",
-    "GENERATE_INFOPLIST_FILE" => "YES",
-  }
-
-  s.user_target_xcconfig = {
-    "GENERATE_INFOPLIST_FILE" => "YES",
-  }
 end
